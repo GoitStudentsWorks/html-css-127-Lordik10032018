@@ -1,7 +1,9 @@
+/* Some sections have the difference */
 .section {
     padding: 64px 0;
 }
 
+/* For title H2 */
 .title {
     font-size: 40px;
     line-height: 1.2;
@@ -11,10 +13,10 @@
     font-family: var(--second-family);
 }
 
+/* for any buttons */
 .btn {
     border: 1px solid var(--color-hawkes-blue);
     border-radius: 100px;
-    padding: 10px px;
     background: var(--color-hawkes-blue);
 }
 
