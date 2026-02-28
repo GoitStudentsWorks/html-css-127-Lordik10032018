@@ -18,6 +18,8 @@
     border: 1px solid var(--color-hawkes-blue);
     border-radius: 100px;
     background: var(--color-hawkes-blue);
+    line-height: 1.6;
+    font-weight: 500;
 }
 
 /* Styles for Tablet devices */
