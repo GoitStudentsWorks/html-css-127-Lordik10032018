@@ -7,13 +7,22 @@
         left: 0;
         z-index: 999;
         background: var(--color-scheme-3-background);
+        pointer-events: auto;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+    }
+
+    .modal-brg.is-hidden {
+        pointer-events: none;
+        visibility: hidden;
+        opacity: 0;
     }
 
     .modal-brg--container {
         display: flex;
         flex-direction: column;
         height: 100%;
-        padding-bottom: 160px;
     }
 
 .modal-brg__wrapper {
@@ -99,9 +108,15 @@
     }
 
     .modal-brg__second-btn {
-        min-width: 204px;
-        align-self: flex-start;
+        max-width: 204px;
     }
 
 }
 /* #endregion only tablet */
+
+/* #region desktop */
+@media only screen and (min-width: 1336px) {
+    .modal-brg {
+        display: none;
+    }
+}
