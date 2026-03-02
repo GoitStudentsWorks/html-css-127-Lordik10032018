@@ -7,6 +7,16 @@
         left: 0;
         z-index: 999;
         background: var(--color-scheme-3-background);
+        pointer-events: auto;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+    }
+
+    .modal-brg.is-hidden {
+        pointer-events: none;
+        visibility: hidden;
+        opacity: 0;
     }
 
     .modal-brg--container {
@@ -99,8 +109,7 @@
     }
 
     .modal-brg__second-btn {
-        min-width: 204px;
-        align-self: flex-start;
+        max-width: 204px;
     }
 
 }
