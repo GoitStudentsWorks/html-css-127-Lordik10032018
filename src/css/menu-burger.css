@@ -114,3 +114,10 @@
 
 }
 /* #endregion only tablet */
+
+/* #region desktop */
+@media only screen and (min-width: 1336px) {
+    .modal-brg {
+        display: none;
+    }
+}
