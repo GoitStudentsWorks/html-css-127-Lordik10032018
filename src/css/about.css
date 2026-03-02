@@ -38,19 +38,6 @@
     white-space: nowrap;
     width: 343px;
     min-height: 46px;
-    transition: background-color .25s ease-in-out, opacity .25s ease-in-out, border .25s ease-in-out;
-}
-
-.about__btn:hover,
-.about__btn:focus {
-    background: var(--opacity-transparent);
-    opacity: 0.5;
-}
-
-.about__btn:active {
-    border: 1px solid var(--color-hawkes-blue);
-    background-color: transparent;
-    opacity: 1;
 }
 
 /* tablet */
