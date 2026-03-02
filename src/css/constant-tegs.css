@@ -10,14 +10,15 @@
   text-align: center;
   color: var(--color-scheme-1-text);
   font-family: var(--second-family);
+  margin-bottom: 20px;
 }
 
 /* for any buttons */
 .btn {
   border: 1px solid var(--color-hawkes-blue);
   border-radius: 100px;
-  padding: 10px px;
   background: var(--color-hawkes-blue);
+  font-weight: 500;
 }
 
 /* Styles for Tablet devices */
@@ -28,7 +29,7 @@
 
   .title {
     font-size: 52px;
-    margin-bottom: 24;
+    margin-bottom: 24px;
   }
 }
 
