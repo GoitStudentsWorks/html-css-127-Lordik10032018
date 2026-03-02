@@ -9,7 +9,6 @@
 }
 
 .about__list {
-    list-style: none;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -20,7 +19,7 @@
     text-align: center;
 }
 
-.about__item__title {
+.about__item-title {
     font-size: 24px;
     line-height: 1.4;
     letter-spacing: 0.01em;
@@ -28,9 +27,30 @@
     font-family: var(--second-family);
 }
 
-.about__item__text {
+.about__item-text {
     letter-spacing: 0em;
-    text-align: center;
+}
+
+.about__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    width: 343px;
+    min-height: 46px;
+    transition: background-color .25s ease-in-out, opacity .25s ease-in-out, border .25s ease-in-out;
+}
+
+.about__btn:hover,
+.about__btn:focus {
+    background: var(--opacity-transparent);
+    opacity: 0.5;
+}
+
+.about__btn:active {
+    border: 1px solid var(--color-hawkes-blue);
+    background-color: transparent;
+    opacity: 1;
 }
 
 /* tablet */
@@ -39,8 +59,9 @@
         background-color: var(--color-drover-lightest);
     }
 
-    .about__title {
-        margin-bottom: 24px;
+    .about__subtitle {
+        font-size: 18px;
+        margin-bottom: 40px;
     }
 
     .about__list {
@@ -55,9 +76,13 @@
         width: calc((100% - 24px) / 2);
     }
 
+    .about__item-title {
+        margin-bottom: 0px;
+    }
+
     .about__btn {
-        max-width: 110px;
-        padding: 10px 24px;
+        width: 110px;
+        margin: auto;
     }
 
 }
@@ -65,33 +90,17 @@
 /* Desktop */
 @media screen and (min-width: 1336px) {
     .about__list {
-        gap: 46px 24px
+        gap: 24px;
+        flex-wrap: nowrap;
     }
 
     .about__item {
         width: calc((100% - 24px) / 4);
+
     }
-}
 
-.about__actions {
-    display: flex;
-    justify-content: center;
-}
-
-.about__btn {
-    min-width: 343px;
-    padding: 10px 140px;
-    transition: background-color .25s ease-in-out, opacity .25s ease-in-out, border .25s ease-in-out;
-}
-
-.about__btn:hover,
-.about__btn:focus {
-    background: var(--opacity-transparent);
-    opacity: 0.5;
-}
-
-.about__btn:active {
-    border: 1px solid var(--color-hawkes-blue);
-    background-color: transparent;
-    opacity: 1;
+    .about__item-title {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
 }
