@@ -1,12 +1,66 @@
 
 
-<section class="hero">
-  <div class="container">
-    <h1 class="hero-title">Mixture of enthusiasm</h1>
-    <p class="hero-text">
-      Your main motivational текст тут
-    </p>
-    <button class="hero-btn">Get started</button>
-  </div>
+<section class="hero" id="hero">
+
+    <picture class="hero-picture">
+
+      <!-- Desktop -->
+       <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/hero-desktop-sq/hero-x1-desktop.jpg 1x,
+          ./images/hero/hero-desktop-sq/hero-x2-desktop.jpg 2x
+          "
+          />
+
+      <!-- Tablet -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/hero-desktop-sq/hero-x1-tab.jpg 1x,
+          ./images/hero/hero-desktop-sq/hero-x2-tab.jpg 2x
+          "
+          />
+
+      <!-- Mobile -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/hero/hero-desktop-sq/bgX1.jpg 1x,
+          ./images/hero/hero-desktop-sq/bgX2.jpg 2x
+          "
+          />
+
+      <img
+        src="./images/hero/hero-desktop-sq/bgX1.jpg"
+        alt="Hero image"
+        class="hero-image"
+        width="375"
+        height="301"
+      />
+    </picture>
+
+    <div class="hero-text-block">
+
+        <h1 class="hero-title">
+          Transform Your Life with Our Yoga Clases
+        </h1>
+
+        <div class="hero-content">
+          <p class="hero-text">
+          Discover the harmony of mind and body through our expertly designed yoga programs. Join a community dedicated to
+          wellness and personal growth.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#" class="hero-link">Join Now</a>
+
+          <button type="button" class="hero-btn">Learn More</button>
+
+        </div>
+
+    </div>
+
 </section>
 
