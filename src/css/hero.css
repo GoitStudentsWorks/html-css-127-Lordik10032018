@@ -1,0 +1,36 @@
+
+
+.hero {
+  padding: 72px 0;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.hero-btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding: 120px 0;
+  }
+}

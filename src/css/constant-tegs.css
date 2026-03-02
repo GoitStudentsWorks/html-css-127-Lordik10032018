@@ -2,6 +2,7 @@
   padding: 64px 0;
 }
 
+/* For title H2 */
 .title {
   font-size: 40px;
   line-height: 1.2;
@@ -11,6 +12,7 @@
   font-family: var(--second-family);
 }
 
+/* for any buttons */
 .btn {
   border: 1px solid var(--color-hawkes-blue);
   border-radius: 100px;
@@ -26,11 +28,12 @@
 
   .title {
     font-size: 52px;
+    margin-bottom: 24;
   }
 }
 
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1336px) {
   .section {
     padding: 112px 0;
   }
