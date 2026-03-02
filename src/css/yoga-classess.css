@@ -1,0 +1,199 @@
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 64px 0;
+    row-gap: 48px;
+    background-color: #F2FAFA;
+}
+
+.explore__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.explore__label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.explore__label--moved {
+    margin-bottom: -8px;
+}
+
+.explore__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.explore__title-text--tablet {
+    display: none;
+}
+
+.explore__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.explore__img {
+    border-radius: 16px;
+}
+
+.explore__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.explore__anchor {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #C2D9FC;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 343px;
+    height: 46px;
+    text-align: center;
+    white-space: nowrap;
+    transition: opacity 250ms ease;
+    outline: unset;
+    text-decoration: none; /* Для анкрура */
+    color: inherit;
+}
+
+.explore__anchor:hover,
+.explore__anchor:focus {
+    opacity: 0.5;
+}
+
+/* =====================================================
+TABLET STYLES (min-width: 768px)
+===================================================== */
+@media screen and (min-width: 768px) {
+    .explore__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        align-items: baseline;
+        row-gap: 40px;
+        margin: 40px 0;
+    }
+
+    .explore__item {
+        row-gap: 24px;
+    }
+
+    /* На планшеті перші 2 картки мають обмеження */
+    .explore__item--classes:nth-of-type(2),
+    .explore__item--classes:nth-of-type(3) {
+        max-width: 340px;
+    }
+
+    .explore__title, 
+    .explore__description {
+        max-width: 704px;
+    }
+
+    .explore__title + .explore__description {
+        font-size: 18px;
+    }
+
+    .explore__item--classes {
+        row-gap: 0;
+    }
+
+    .explore__picture {
+        margin-bottom: 16px;
+    }
+
+    .explore__title-text--desktop,
+    .explore__subtitle-addon {
+        display: none;
+    }
+
+    .explore__title-text--tablet {
+        display: block;
+    }
+
+    .explore__anchor {
+        width: 110px;
+        margin-top: 21px;
+    }
+}
+
+/* =====================================================
+DESKTOP STYLES (min-width: 1336px)
+===================================================== */
+@media screen and (min-width: 1336px) {
+    .explore__list {
+        max-width: 1312px;
+        margin: 112px 0;
+    }
+
+    .explore__title {
+        font-size: 52px;
+    }
+
+    .explore__title-text--desktop {
+        display: block;
+    }
+
+    /* Ховаємо адон підзаголовка на десктопі, якщо потрібно за логікою вашого css */
+    .explore__subtitle-addon {
+        display: none;
+    }
+
+    .explore__title-text--tablet {
+        display: none;
+    }
+
+    .explore__item--classes {
+        width: calc((100% - 48px) / 3);
+        row-gap: 24px;
+    }
+
+    .explore__picture {
+        margin-bottom: 8px;
+    }
+
+    .explore__subtitle {
+        font-size: 36px;
+    }
+
+    .explore__title, 
+    .explore__description {
+        max-width: 768px;
+    }
+
+    .explore__item--classes:nth-of-type(2),
+    .explore__item--classes:nth-of-type(3) {
+        max-width: 422px;
+    }
+
+    .explore__anchor {
+        width: 110px;
+        margin-top: 0;
+    }
+}
