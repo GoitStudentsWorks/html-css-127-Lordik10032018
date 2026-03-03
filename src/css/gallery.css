@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 64px auto;
+  margin: 0 auto;
 }
 
 .title {
@@ -34,7 +34,8 @@
   margin: 0 auto;
   width: 155px;
   height: 155px;
-  flex-basis: calc((100% - 24px) / 2);
+  width: calc((100% - 24px) / 2);
+  /* flex-basis: calc((100% - 24px) / 2); */
 }
 
 .gallery__list-img {
@@ -45,10 +46,6 @@
 }
 /* ===== 768px ===== */
 @media screen and (min-width: 768px) {
-  .gallery .container {
-    margin: 40px auto;
-  }
-
   .gallery__text {
     margin: 24px auto 80px auto;
   }
@@ -62,10 +59,6 @@
 
 /* ===== 1336px ===== */
 @media screen and (min-width: 1336px) {
-  .gallery .container {
-    margin: 112px auto;
-  }
-
   .gallery__title {
     font-size: 52px;
   }
