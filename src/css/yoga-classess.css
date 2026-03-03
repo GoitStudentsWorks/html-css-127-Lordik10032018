@@ -59,10 +59,6 @@
 
 }
 
-.explore__anchor:hover,
-.explore__anchor:focus {
-    opacity: 0.5;
-}
 
 /* =====================================================
 TABLET STYLES (min-width: 768px)
