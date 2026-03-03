@@ -4,7 +4,7 @@
 }
 
 .testimonials__title {
-  margin: 0 0 24px;
+  margin-bottom: 24px;
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 52px;
@@ -15,7 +15,7 @@
 }
 
 .testimonials__subtitle {
-  margin: 0 0 34px;
+  margin-bottom: 24px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
@@ -41,7 +41,7 @@
 }
 
 .testimonials__review {
-  margin: 0;
+  margin-bottom: 32px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 22px;
@@ -51,9 +51,11 @@
 }
 
 .testimonials__person {
-  margin-top: auto;
-  padding-top: 20px;
   text-align: center;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonials__avatar {
@@ -61,11 +63,10 @@
   height: 56px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 12px;
+  margin: 0 auto 16px;
 }
 
 .testimonials__name {
-  margin: 0;
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 18px;
@@ -75,13 +76,13 @@
 }
 
 .testimonials__role {
-  margin: 0;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   color: var(--color-neutral-darkest);
+  margin-bottom: 0;
 }
 
 .testimonials__card--1 {
