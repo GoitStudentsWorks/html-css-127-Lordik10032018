@@ -36,7 +36,7 @@
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    width: 343px;
+    max-width: 343px;
     min-height: 46px;
 }
 
@@ -64,12 +64,12 @@
     }
 
     .about__item-title {
-        font-size: 22px;
+        font-size: 23px;
         margin-bottom: 0px;
     }
 
     .about__btn {
-        width: 110px;
+        max-width: 110px;
         margin: auto;
     }
 
@@ -88,7 +88,7 @@
     }
 
     .about__item-title {
-        font-size: 28px;
+        font-size: 27px;
         margin-bottom: 24px;
     }
 }

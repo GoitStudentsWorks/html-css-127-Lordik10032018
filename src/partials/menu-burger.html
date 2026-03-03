@@ -1,9 +1,9 @@
-<div class="modal-brg">
+<div class="modal-brg is-hidden" id="modalBrg">
   <div class="container modal-brg--container">
     <!-- #region wrapper -->
     <div class="modal-brg__wrapper">
       <!-- #region btn-close -->
-      <button class="modal-brg__close">
+      <button class="modal-brg__close" id="closeBurgerMenu">
         <svg width="24" height="24">
           <use href="./icons/sprite.svg#x"></use>
         </svg>
@@ -47,7 +47,9 @@
     </nav>
     <!-- #endregion nav-menu -->
     <!-- #region btn-second -->
-    <a href="#pricing" class="btn modal-brg__second-btn">Join Now</a>
+    <div>
+      <a href="#pricing" class="btn modal-brg__second-btn">Join Now</a>
+    </div>
     <!-- #endregion btn-second -->
   </div>
 </div>
