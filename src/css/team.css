@@ -1,42 +1,24 @@
 /*OUR TEAM*/
-.section {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
 
-.title {
-    font-weight: 400;
-        font-size: 52px;
-        line-height: 1.11111;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #0D0B0A;
-    margin: 0;
-}
-.team-block {
-    background-color: #F2FAFA;
-}
 
 .team__card {
-    background-color: transparent;
-    width: 100%;
     max-width: 375px;
 }
 
 .team__tagline {
     text-align: center;
-    color: #0D0B0A;
+    
     margin-bottom: 8px;
 }
 
 .team__title {
     
-    margin: 0 0 24px 0;
+    margin-bottom: 24px;
 }
 
 .team__description {
     font-size: 18px;
-    color: #0D0B0A;
+    
     margin-bottom: 40px;
     max-width: 600px;
     margin-left: auto;
@@ -55,7 +37,6 @@
 }
 
 .team__image {
-    width: 100%;
     height: auto;
     display: block;
 }
@@ -65,16 +46,17 @@
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #0D0B0A;
     margin-bottom: 8px;
+    
+    
 }
 
 .team__position {
-    margin: 0;
+    
     font-size: 18px;
     font-weight: 400;
-    color: #0D0B0A;
     line-height: 1.5;
+    
     letter-spacing: 0.02em;
     padding-bottom: 16px;
 }
@@ -82,8 +64,8 @@
 .team__brief-info {
     font-size: 16px;
     font-weight: 400;
-    color: #0D0B0A;
     line-height: 1.5;
+   
     letter-spacing: 0.02em;
     margin-bottom: 20px;
     flex-grow: 1;
@@ -93,13 +75,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    padding: 0;
-    list-style: none;
     justify-content: center;
 }
 
 .team__card-wrapper {
-    padding: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -108,9 +87,6 @@
 .team__social-links {
     display: flex;
     gap: 14px;
-    padding: 0;
-    margin-top: auto;
-    list-style: none;
 }
 
 .team__social-icon {
@@ -120,21 +96,20 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: transparent;
-        fill: #0D0B0A;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    fill: var(--color-neutral-darkest);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team__social-icon:hover,
+.team__social-icon:focus {
+    opacity: 0.5;
+    outline: none;
+}
+.team__social-icon:active {
     
-        .team__social-icon:hover,
-        .team__social-icon:focus {
-            background-color: #C2D9FC;
-            outline: none;
-        }
-        .team__social-icon:active {
-            background-color: #C2D9FC;
-            opacity: 0.5;   
-        }
+    opacity: 1;
+}
+
+        
 
 
 /*Tablet(768px)*/
