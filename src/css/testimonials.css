@@ -1,33 +1,30 @@
 .testimonials {
-  background: #f2fafa;
+  background: var(--color-drover-lightest);
   padding: 64px 0;
 }
 
 .testimonials__title {
   margin: 0 0 24px;
-  font-family: "Cabin", sans-serif;
+  font-family: var(--second-family);
   font-weight: 400;
   font-size: 52px;
   line-height: 1.2;
   letter-spacing: 0.01em;
   text-align: center;
-  color: #0d0b0a;
+  color: var(--color-neutral-darkest);
 }
 
 .testimonials__subtitle {
   margin: 0 0 34px;
-  font-family: "Sarabun", sans-serif;
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
   text-align: center;
-  color: #0d0b0a;
+  color: var(--color-neutral-darkest);
 }
 
 .testimonials__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
@@ -36,7 +33,7 @@
 .testimonials__card {
   border-radius: 24px;
   padding: 12px;
-  background: #dfebeb;
+  background: var(--color-hawkes-blue-lighter);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -45,12 +42,12 @@
 
 .testimonials__review {
   margin: 0;
-  font-family: "Sarabun", sans-serif;
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 22px;
   line-height: 1.6;
   text-align: center;
-  color: #0d0b0a;
+  color: var(--color-neutral-darkest);
 }
 
 .testimonials__person {
@@ -69,22 +66,22 @@
 
 .testimonials__name {
   margin: 0;
-  font-family: "Sarabun", sans-serif;
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 18px;
   line-height: 1.6;
   text-align: center;
-  color: #0d0b0a;
+  color: var(--color-neutral-darkest);
 }
 
 .testimonials__role {
   margin: 0;
-  font-family: "Sarabun", sans-serif;
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  color: #0d0b0a;
+  color: var(--color-neutral-darkest);
 }
 
 .testimonials__card--1 {
