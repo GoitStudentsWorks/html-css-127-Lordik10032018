@@ -15,10 +15,22 @@
 
 /* for any buttons */
 .btn {
-  border: 1px solid var(--color-hawkes-blue);
-  border-radius: 100px;
-  background: var(--color-hawkes-blue);
-  font-weight: 500;
+    border-radius: 100px;
+    background: var(--color-hawkes-blue);
+    font-weight: 500;
+    transition: background-color 250ms ease-in-out, opacity 250ms ease-in-out, border 250ms ease-in-out;
+    border: none;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.5;
+}
+
+.btn:active {
+    border: 1px solid var(--color-hawkes-blue);
+    background: var(--opacity-transparent);
+    opacity: 1;
 }
 
 /* Styles for Tablet devices */
