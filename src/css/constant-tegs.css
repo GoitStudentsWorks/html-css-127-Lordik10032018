@@ -1,5 +1,6 @@
-.section {
-  padding: 64px 0;
+/* Some sections have the difference */
+section {  
+    padding: 64px 0;
 }
 
 /* For title H2 */
