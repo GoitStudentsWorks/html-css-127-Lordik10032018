@@ -4,7 +4,7 @@
     align-items: center;
     margin: 64px 0;
     row-gap: 48px;
-    background-color: #F2FAFA;
+    background-color: var(--color-drover-lightest);
 }
 
 .explore__item {
