@@ -152,6 +152,7 @@ DESKTOP STYLES (min-width: 1336px)
     .container>.explore__title,
     .container>.explore__description {
         max-width: 768px;
-        justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
