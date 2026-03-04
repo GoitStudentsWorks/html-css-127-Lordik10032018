@@ -89,11 +89,12 @@
 /*Desktop (1336px)*/
 @media screen and (min-width: 1336px) {
     
-    }
+    
     .team__list {
         column-gap: 24px;
         row-gap: 60px;
     }
     .team__card {
         width: calc((100% - 48px) / 3);
+    }
     }
