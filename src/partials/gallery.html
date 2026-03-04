@@ -1,12 +1,10 @@
-<section class="section gallery" id="gallery">
-  <div class="container">
+<section id="gallery">
+  <div class="gallery__container container">
     <h2 class="title">Breathe in the Space</h2>
-    <div class="gallery__text-wrap">
-      <p class="gallery__text">
-        Step inside YogaBloom and feel the calm. Explore our serene studio and
-        the peaceful moments our community shares during each session.
-      </p>
-    </div>
+    <p class="gallery__text">
+      Step inside YogaBloom and feel the calm. Explore our serene studio and the
+      peaceful moments our community shares during each session.
+    </p>
 
     <ul class="gallery__list">
       <li class="gallery__list-item">
@@ -14,8 +12,8 @@
           <!-- Desktop -->
           <source
             srcset="
-              ./images/gallery/gallery-1.jpg    1x,
-              ./images/gallery/gallery-1@2x.jpg 2x
+              ./images/gallery/desktop/desktop-gallery-1.jpg    1x,
+              ./images/gallery/desktop/desktop-gallery-1@2x.jpg 2x
             "
             media="(min-width: 1336px)"
           />
@@ -23,8 +21,8 @@
           <!-- Tablet -->
           <source
             srcset="
-              ./images/gallery/gallery-1.jpg    1x,
-              ./images/gallery/gallery-1@2x.jpg 2x
+              ./images/gallery/tablet/tablet-gallery-1.jpg    1x,
+              ./images/gallery/tablet/tablet-gallery-1@2x.jpg 2x
             "
             media="(min-width: 768px)"
           />
@@ -32,8 +30,8 @@
           <!-- Mobile -->
           <source
             srcset="
-              ./images/gallery/gallery-1.jpg    1x,
-              ./images/gallery/gallery-1@2x.jpg 2x
+              ./images/gallery/mobile/mobile-gallery-1.jpg    1x,
+              ./images/gallery/mobile/mobile-gallery-1@2x.jpg 2x
             "
             media="(max-width: 767px)"
           />
@@ -41,10 +39,11 @@
           <!-- Fallback image -->
           <img
             class="gallery__list-img"
-            src="./images/gallery/gallery-1.jpg"
+            src="./images/gallery/desktop/desktop-gallery-1.jpg"
             alt="people standing with hands up on the carpet in yoga class"
             width="421"
             height="448"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -54,8 +53,8 @@
           <!-- Desktop -->
           <source
             srcset="
-              ./images/gallery/gallery-2.jpg    1x,
-              ./images/gallery/gallery-2@2x.jpg 2x
+              ./images/gallery/desktop/desktop-gallery-2.jpg    1x,
+              ./images/gallery/desktop/desktop-gallery-2@2x.jpg 2x
             "
             media="(min-width: 1336px)"
           />
@@ -63,28 +62,24 @@
           <!-- Tablet -->
           <source
             srcset="
-              ./images/gallery/gallery-2.jpg    1x,
-              ./images/gallery/gallery-2@2x.jpg 2x
+              ./images/gallery/tablet/tablet-gallery-2.jpg    1x,
+              ./images/gallery/tablet/tablet-gallery-2@2x.jpg 2x
             "
             media="(min-width: 768px)"
           />
 
           <!-- Mobile -->
-          <source
-            srcset="
-              ./images/gallery/gallery-2.jpg    1x,
-              ./images/gallery/gallery-2@2x.jpg 2x
-            "
-            media="(max-width: 767px)"
-          />
-
-          <!-- Fallback image -->
           <img
             class="gallery__list-img"
-            src="./images/gallery/gallery-2.jpg"
+            src="./images/gallery/mobile/mobile-gallery-1.jpg"
+            srcset="
+              ./images/gallery/mobile/mobile-gallery-1.jpg    1x,
+              ./images/gallery/mobile/mobile-gallery-1@2x.jpg 2x
+            "
             alt="people sitting in lotus posa on the carpet in yoga class"
-            width="421"
-            height="448"
+            width="155"
+            height="155"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -94,8 +89,8 @@
           <!-- Desktop -->
           <source
             srcset="
-              ./images/gallery/gallery-3.jpg    1x,
-              ./images/gallery/gallery-3@2x.jpg 2x
+              ./images/gallery/desktop/desktop-gallery-3.jpg    1x,
+              ./images/gallery/desktop/desktop-gallery-3@2x.jpg 2x
             "
             media="(min-width: 1336px)"
           />
@@ -103,28 +98,53 @@
           <!-- Tablet -->
           <source
             srcset="
-              ./images/gallery/gallery-3.jpg    1x,
-              ./images/gallery/gallery-3@2x.jpg 2x
+              ./images/gallery/tablet/tablet-gallery-3.jpg    1x,
+              ./images/gallery/tablet/tablet-gallery-3@2x.jpg 2x
             "
             media="(min-width: 768px)"
           />
 
           <!-- Mobile -->
+          <img class="gallery__list-img"
+          src="./images/gallery/mobile/mobile-gallery-3.jpg" srcset="
+          ./images/gallery/mobile/mobile-gallery-3.jpg 1x,
+          ./images/gallery/mobile/mobile-gallery-3@2x.jpg 2x " alt="yoga class
+          with carpets" width="421"" width="155" height="155" loading="lazy" />
+        </picture>
+      </li>
+
+      <li class="gallery__list-item">
+        <picture>
+          <!-- Desktop -->
           <source
             srcset="
-              ./images/gallery/gallery-3.jpg    1x,
-              ./images/gallery/gallery-3@2x.jpg 2x
+              ./images/gallery/desktop/desktop-gallery-4.jpg    1x,
+              ./images/gallery/desktop/desktop-gallery-4@2x.jpg 2x
             "
-            media="(max-width: 767px)"
+            media="(min-width: 1336px)"
           />
 
-          <!-- Fallback image -->
+          <!-- Tablet -->
+          <source
+            srcset="
+              ./images/gallery/tablet/tablet-gallery-4.jpg    1x,
+              ./images/gallery/tablet/tablet-gallery-4@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <!-- Mobile -->
           <img
             class="gallery__list-img"
-            src="./images/gallery/gallery-3.jpg"
+            src="./images/gallery/mobile/mobile-gallery-4.jpg"
+            srcset="
+              ./images/gallery/mobile/mobile-gallery-4.jpg    1x,
+              ./images/gallery/mobile/mobile-gallery-4@2x.jpg 2x
+            "
             alt="yoga class with carpets"
-            width="421"
-            height="448"
+            width="155"
+            height="155"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -134,8 +154,8 @@
           <!-- Desktop -->
           <source
             srcset="
-              ./images/gallery/gallery-4.jpg    1x,
-              ./images/gallery/gallery-4@2x.jpg 2x
+              ./images/gallery/desktop/desktop-gallery-5.jpg    1x,
+              ./images/gallery/desktop/desktop-gallery-5@2x.jpg 2x
             "
             media="(min-width: 1336px)"
           />
@@ -143,68 +163,24 @@
           <!-- Tablet -->
           <source
             srcset="
-              ./images/gallery/gallery-4.jpg    1x,
-              ./images/gallery/gallery-4@2x.jpg 2x
+              ./images/gallery/tablet/tablet-gallery-5.jpg    1x,
+              ./images/gallery/tablet/tablet-gallery-5@2x.jpg 2x
             "
             media="(min-width: 768px)"
           />
 
           <!-- Mobile -->
-          <source
-            srcset="
-              ./images/gallery/gallery-4.jpg    1x,
-              ./images/gallery/gallery-4@2x.jpg 2x
-            "
-            media="(max-width: 767px)"
-          />
-
-          <!-- Fallback image -->
           <img
             class="gallery__list-img"
-            src="./images/gallery/gallery-4.jpg"
-            alt="yoga class with carpets"
-            width="421"
-            height="448"
-          />
-        </picture>
-      </li>
-
-      <li class="gallery__list-item">
-        <picture>
-          <!-- Desktop -->
-          <source
+            src="./images/gallery/mobile/mobile-gallery-5.jpg"
             srcset="
-              ./images/gallery/gallery-5.jpg    1x,
-              ./images/gallery/gallery-5@2x.jpg 2x
+              ./images/gallery/mobile/mobile-gallery-5.jpg    1x,
+              ./images/gallery/mobile/mobile-gallery-5@2x.jpg 2x
             "
-            media="(min-width: 1336px)"
-          />
-
-          <!-- Tablet -->
-          <source
-            srcset="
-              ./images/gallery/gallery-5.jpg    1x,
-              ./images/gallery/gallery-5@2x.jpg 2x
-            "
-            media="(min-width: 768px)"
-          />
-
-          <!-- Mobile -->
-          <source
-            srcset="
-              ./images/gallery/gallery-5.jpg    1x,
-              ./images/gallery/gallery-5@2x.jpg 2x
-            "
-            media="(max-width: 767px)"
-          />
-
-          <!-- Fallback image -->
-          <img
-            class="gallery__list-img"
-            src="./images/gallery/gallery-5.jpg"
             alt="people sitting in lotus posa on the carpet in yoga class"
-            width="421"
-            height="448"
+            width="155"
+            height="155"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -214,8 +190,8 @@
           <!-- Desktop -->
           <source
             srcset="
-              ./images/gallery/gallery-6.jpg    1x,
-              ./images/gallery/gallery-6@2x.jpg 2x
+              ./images/gallery/desktop/desktop-gallery-6.jpg    1x,
+              ./images/gallery/desktop/desktop-gallery-6@2x.jpg 2x
             "
             media="(min-width: 1336px)"
           />
@@ -223,28 +199,24 @@
           <!-- Tablet -->
           <source
             srcset="
-              ./images/gallery/gallery-6.jpg    1x,
-              ./images/gallery/gallery-6@2x.jpg 2x
+              ./images/gallery/tablet/tablet-gallery-6.jpg    1x,
+              ./images/gallery/tablet/tablet-gallery-6@2x.jpg 2x
             "
             media="(min-width: 768px)"
           />
 
           <!-- Mobile -->
-          <source
-            srcset="
-              ./images/gallery/gallery-6.jpg    1x,
-              ./images/gallery/gallery-6@2x.jpg 2x
-            "
-            media="(max-width: 767px)"
-          />
-
-          <!-- Fallback image -->
           <img
             class="gallery__list-img"
-            src="./images/gallery/gallery-6.jpg"
+            src="./images/gallery/mobile/mobile-gallery-6.jpg"
+            srcset="
+              ./images/gallery/mobile/mobile-gallery-6.jpg    1x,
+              ./images/gallery/mobile/mobile-gallery-6@2x.jpg 2x
+            "
             alt="people sitting in lotus posa on the carpet in yoga class"
-            width="421"
-            height="448"
+            width="155"
+            height="155"
+            loading="lazy"
           />
         </picture>
       </li>
