@@ -1,26 +1,14 @@
 /*OUR TEAM*/
-
-
-.team__card {
-    max-width: 375px;
-}
-
 .team__tagline {
     text-align: center;
-    
-    margin-bottom: 8px;
 }
 
 .team__title {
-    
     margin-bottom: 24px;
 }
 
 .team__description {
-    font-size: 18px;
-    
     margin-bottom: 40px;
-    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -30,10 +18,6 @@
 
 .team__info {
     padding: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
 }
 
 .team__image {
@@ -46,36 +30,26 @@
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
-    
-    
+    margin-bottom: 8px;  
 }
-
 .team__position {
-    
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    
+    line-height: 1.5; 
     letter-spacing: 0.02em;
     padding-bottom: 16px;
 }
 
 .team__brief-info {
-    font-size: 16px;
-    font-weight: 400;
     line-height: 1.5;
-   
     letter-spacing: 0.02em;
     margin-bottom: 20px;
-    flex-grow: 1;
+    flex-grow: 1; 
 }
 
 .team__list {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    justify-content: center;
+    align-items: baseline;
 }
 
 .team__card-wrapper {
@@ -87,6 +61,7 @@
 .team__social-links {
     display: flex;
     gap: 14px;
+    justify-content: center;
 }
 
 .team__social-icon {
@@ -105,51 +80,34 @@
     outline: none;
 }
 .team__social-icon:active {
-    
-    opacity: 1;
+    opacity: 0.3;
 }
-
-        
 
 
 /*Tablet(768px)*/
 @media screen and (min-width: 768px) {
-    .team-block {
-        padding: 100px 0;
-    }
-
     .team__title {
         font-size: 48px;
     }
-
     .team__list {
         column-gap: 24px;
         row-gap: 48px;
     }
-
     .team__card {
         width: calc((100% - 24px) / 2);
-        max-width: 350px;
     }
 }
 
 /*Desktop (1336px)*/
 @media screen and (min-width: 1336px) {
-    .team-block {
-        padding: 120px 0;
-    }
-
     .team__title {
         font-size: 52px;
     }
-
     .team__list {
         column-gap: 24px;
         row-gap: 60px;
     }
-
     .team__card {
         width: calc((100% - 48px) / 3);
-        max-width: 421px;
     }
 }
