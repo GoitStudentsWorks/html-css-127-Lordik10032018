@@ -10,7 +10,7 @@
 }
 
 .gallery__text {
-  margin: 20px auto 48px auto;
+  margin: 0px auto 48px auto;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
@@ -20,7 +20,6 @@
 }
 
 .gallery__list {
-  list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
