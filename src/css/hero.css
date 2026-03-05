@@ -4,13 +4,8 @@
 
 .hero {
   margin: 0 auto;
-
-}
-
-.hero-picture {
-  width: 100%;
-  height: 301px;
-  overflow: hidden;
+  padding: 48px 16px;
+  max-width: 375px;
 }
 
 .hero-image {
@@ -102,48 +97,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  gap: 8px;
 
-  width: 100%;
-  height: 46px;
+
+  min-width: 100%;
+  min-height: 46px;
   padding: 10px 24px;
 
-  border: 1px solid var(--opacity-transparent);
-  border-radius: 100px;
-  background: var(--opacity-neutral-darkest-5);
-
-  color: var(--color-scheme-3-text);
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
   white-space: nowrap;
   cursor: pointer;
-  box-sizing: border-box;
 }
-
-.hero-btn:hover,
-.hero-btn:focus {
-  opacity: 0.2;
-  background: var(--color-hawkes-blue);
-  border: 1px solid var(--color-hawkes-blue);
-}
-
-.hero-btn:active {
-  background: var(--opacity-neutral-darkest-5);
-  border: 1px solid var(--opacity-transparent);
-  opacity: 0.2;
-}
-
 
 
 /* ==== TABLET ==== */
 
 @media (min-width: 768px) {
 
-  .hero-picture {
-    height: 359px;
+  .hero {
+    max-width: 768px;
+    padding: 24px 32px;
   }
 
   .hero-text-block {
@@ -193,9 +164,11 @@
 
 @media (min-width: 1336px) {
 
-  .hero-picture {
-    height: 684px;
+  .hero {
+    min-width: 1336px;
+    padding: 80px 64px;
   }
+
 
   .hero-text-block {
     flex-direction: row;
@@ -207,6 +180,7 @@
 
   .hero-title {
     max-width: 1336px;
+    font-size: 72px;
 
   }
 
