@@ -13,7 +13,7 @@
 
 .backdrop.is-open {
     opacity: 1;
-    pointer-events: none;
+    pointer-events: auto;
     visibility: visible;
 }
 
@@ -35,18 +35,20 @@
 /* Submit Button */
 .modal__submit-btn {
     width: 100%;
-    max-width: 343px;
     min-height: 46px;
     display: flex;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-
 }
 
 .modal__submit-btn:hover,
 .modal__submit-btn:focus {
-    filter: brightness(0.95);
+    opacity: 0.5;
+}
+
+.modal__submit-btn:active {
+    opacity: 0.3;
 }
 
 /* Адаптивність мобілки з 375px */
@@ -97,10 +99,21 @@
     align-items: center;
     justify-content: center;
     padding: 0;
+    border-radius: 50%;
+    transition: border 250ms ease-in-out;
 }
 
 .modal__close-icon {
     fill: currentColor;
+}
+
+.modal__close-btn:focus,
+.modal__close-btn:hover {
+    opacity: 0.5;
+}
+
+.modal__close-btn:active {
+    opacity: 0.3;
 }
 
 /* Typography */
