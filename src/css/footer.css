@@ -23,7 +23,7 @@
   font-size: 16px;
   line-height: 1.25;
 
-  color: var(--footer-logo-color, #111111);
+  color: var(--footer-logo-color);
   text-decoration: none;
 }
 
@@ -77,25 +77,27 @@
   border-color: var(--footer-input-border-focus, #bdbdbd);
   background: var(--footer-input-bg-focus, #ffffff);
 }
-
-.footer-btn {
-  width: 100%;
-  height: 44px;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   border: none;
   border-radius: 100px;
 
-  background: var(--footer-btn-bg, #efefef);
-  color: var(--footer-btn-color, #111111);
+  transition:
+    background-color 250ms ease,
+    transform 250ms ease;
+}
+.footer-btn {
+  width: 100%;
+  height: 46px;
+  background: rgba(13, 11, 10, 0.05);
+  color: var(--footer-btn-color);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-
-  cursor: pointer;
-  transition:
-    background-color 250ms ease,
-    transform 250ms ease;
 }
 
 .footer-btn:hover,
@@ -211,7 +213,6 @@
     padding: 40px 48px;
     border-radius: 32px;
 
-    /* Собираем лейаут без добавления новых обёрток */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -261,7 +262,7 @@
 
   .footer-copy {
     grid-area: copy;
-    margin-top: 12px;
+    margin-top: 0px;
   }
 }
 /* ===== Desktop (1336+) ===== */
@@ -274,14 +275,13 @@
     padding: 56px 64px;
     border-radius: 32px;
 
-    /* 3 колонки: слева subscribe, по центру links, справа social */
     grid-template-columns: 1.4fr 0.6fr 0.6fr;
     grid-template-areas:
       'logo links social'
       'subscribe links social'
       'copy copy copy';
 
-    column-gap: 120px;
+    column-gap: 128px;
     row-gap: 24px;
     align-items: start;
   }
