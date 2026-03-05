@@ -77,18 +77,6 @@
   border-color: var(--footer-input-border-focus, #bdbdbd);
   background: var(--footer-input-bg-focus, #ffffff);
 }
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  border: none;
-  border-radius: 100px;
-
-  transition:
-    background-color 250ms ease,
-    transform 250ms ease;
-}
 .footer-btn {
   width: 100%;
   height: 46px;
