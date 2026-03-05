@@ -270,20 +270,19 @@
   .footer {
     padding: 80px 0;
   }
-
   .footer-container {
+    grid-template-columns: 1.4fr 200px 0.6fr 0.6fr;
+
+    grid-template-areas:
+      'logo . links social'
+      'subscribe . links social'
+      'copy copy copy copy';
+
+    column-gap: 40px;
+    row-gap: 24px;
+    align-items: baseline;
     padding: 56px 64px;
     border-radius: 32px;
-
-    grid-template-columns: 1.4fr 0.6fr 0.6fr;
-    grid-template-areas:
-      'logo links social'
-      'subscribe links social'
-      'copy copy copy';
-
-    column-gap: 128px;
-    row-gap: 24px;
-    align-items: start;
   }
 
   .footer-subscribe {
@@ -317,5 +316,6 @@
   .footer-link,
   .footer-social-link {
     line-height: 1.5;
+    align-self: baseline;
   }
 }
